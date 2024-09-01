@@ -1,0 +1,59 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 16px 0;
+  z-index: 100;
+  &.dark {
+    background: #5610ca;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    @include transition;
+    background: #5610ca;
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    width: 170px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    img {
+      width: 100%;
+    }
+  }
+  &.sticky {
+    position: fixed;
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+@mixin header-lg-xlg {
+  .header {
+    position: fixed;
+    padding: 24px 0;
+    &::before {
+      opacity: 1 !important;
+    }
+  }
+}
+@mixin header-xsm-sm {
+  .header {
+    &__logo {
+      width: 150px;
+    }
+  }
+}

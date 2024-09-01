@@ -1,0 +1,138 @@
+// 1460px
+@include xxxlg-xxxxlg {
+  // base start
+  h1 {
+    font-size: 72px;
+    line-height: 82px;
+  }
+  h2 {
+    font-size: 60px;
+    line-height: 68px;
+  }
+  h3 {
+    font-size: 42px;
+    line-height: 48px;
+    &.sm {
+      font-size: 40px;
+    }
+  }
+  h4 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  h5 {
+    font-size: 24px;
+    line-height: 28px;
+    &.sm {
+      font-size: 22px;
+      line-height: 32px;
+    }
+  }
+  h6 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .button {
+    &.white {
+      font-size: 18px;
+      line-height: 24px;
+      padding: 11px 28px;
+    }
+    &.blue {
+      font-size: 18px;
+      line-height: 24px;
+      padding: 11px 28px;
+    }
+  }
+  // base end
+}
+// 1340px
+@include xxlg-xxxlg {
+  // base start
+  h1 {
+    font-size: 60px;
+    line-height: 68px;
+  }
+  h2 {
+    font-size: 54px;
+    line-height: 50px;
+  }
+  h3 {
+    font-size: 32px;
+    line-height: 40px;
+    &.sm {
+      font-size: 30px;
+    }
+  }
+  h4 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  h5 {
+    font-size: 22px;
+    line-height: 32px;
+    &.sm {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+  h6 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .button {
+    &.white {
+      font-size: 16px;
+      line-height: 22px;
+    }
+    &.blue {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  // base end
+}
+// 1024px
+@include lg-xlg {
+  // base start
+  @include nav-lg-xlg;
+  @include header-lg-xlg;
+  .auto__container {
+    padding: 0 20px;
+  }
+  h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  h2 {
+    font-size: 46px;
+    line-height: 50px;
+  }
+  // base end
+  @include company-lg-xlg;
+
+  // case start
+  @include case-lg-xlg;
+  // case end
+}
+// 540px
+@include xsm-sm {
+  // base start
+  @include header-xsm-sm;
+  @include nav-xsm-sm;
+  h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  // base end
+  // index start
+  @include case-xsm-sm;
+
+  // index end
+  @include terms-xsm-sm;
+
+}
